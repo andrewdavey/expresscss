@@ -154,19 +154,12 @@
         if (!stylesheet) return;
         
         var newHref = href +
-                (href.indexOf("?") >= 0 ? "&" : "?") +
-                "_nocache=" + (new Date).getTime();
+            (href.indexOf("?") >= 0 ? "&" : "?") +
+            "_nocache=" +
+            (new Date()).getTime();
         
-        // Check if the appropriate DOM Node is there.
         if (stylesheet.setAttribute) {
-            // Create the link.
-            stylesheet = document.createElement("link");
-            stylesheet.setAttribute("rel", "stylesheet");
             stylesheet.setAttribute("href", newHref);
-            head.appendChild(stylesheet);
-
-            // Update the reference to the newly created link.
-            stylesheets[href] = stylesheet;
         } else {
             // Update the href to the new URL.
             stylesheet.href = newHref;
