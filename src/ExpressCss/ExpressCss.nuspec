@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ExpressCss</id>
+        <version>$version$</version>
+        <authors>Andrew Davey</authors>
+        <owners>Andrew Davey</owners>
+        <licenseUrl>https://github.com/andrewdavey/expresscss/master/license.txt</licenseUrl>
+        <projectUrl>https://github.com/andrewdavey/expresscss</projectUrl>
+        <description>Automatically reload stylesheets in all web browsers as soon as a CSS file changes.</description>
+        <tags>web css asp.net</tags>
+        <dependencies>
+            <dependency id="SignalR.Server" version="0.3.3" />
+            <dependency id="WebActivator" version="1.4.3" />
+        </dependencies>
+    </metadata>
+</package>
